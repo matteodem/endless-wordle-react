@@ -129,8 +129,6 @@ export default function App() {
         value,
       };
 
-      console.log(guesses);
-
       setGuesses(guesses);
 
       setCurrentLetterIndex(currentLetterIndex + 1);
