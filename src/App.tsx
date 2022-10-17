@@ -15,7 +15,6 @@ const initialGuessFields = [
 const jsonDeepClone = (val) => JSON.parse(JSON.stringify(val));
 
 export default function App() {
-  // TODO Put state stuff into state.tsx
   const [guesses, setGuesses] = useState([
     jsonDeepClone(initialGuessFields),
     jsonDeepClone(initialGuessFields),
