@@ -1,0 +1,107 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.result-box {
+  margin-top: 10px;
+}
+
+.invalid-box {
+  margin-top: 10px;
+  color: red;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 360px;
+  margin: 30px auto 0 auto;
+}
+
+.keyboard .key {
+  width: 28px;
+  height: 24px;
+  margin: 3px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.keyboard .enter-key,
+.keyboard .delete-key {
+  width: 46px;
+}
+
+.keyboard .enter,
+.keyboard .delete {
+  width: 40px;
+  font-size: 0.6rem;
+}
+
+.keyboard .key.no-match {
+  border: 1px solid gray;
+  background-color: darkgray;
+  opacity: 0.8;
+  color: gray;
+}
+
+.keyboard .key.match {
+  border: 1px solid orange;
+  background-color: #ff5733;
+  color: orange;
+}
+
+.keyboard .key.perfect-match {
+  border: 1px solid green;
+  background-color: lightgreen;
+  color: green;
+}
+
+.letter-field {
+  height: 24px;
+  width: 24px;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2px 0;
+}
+
+.letter-field.no-match {
+  border: 1px solid gray;
+  background-color: darkgray;
+  opacity: 0.8;
+  color: gray;
+}
+
+.letter-field.match {
+  border: 1px solid orange;
+  background-color: #ff5733;
+  color: orange;
+}
+
+.letter-field.perfect-match {
+  border: 1px solid green;
+  background-color: lightgreen;
+  color: green;
+}
+
+.word-field > .letter {
+  display: inline-block;
+  margin: 0 2px;
+}
